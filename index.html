@@ -134,6 +134,15 @@ main{max-width:640px;margin:0 auto;padding:8px 16px 0}
 .toast{position:fixed;left:50%;bottom:72px;transform:translateX(-50%);background:var(--char);color:#fff;padding:9px 16px;border-radius:999px;font-size:13.5px;font-weight:600;z-index:40;opacity:0;pointer-events:none;transition:opacity .2s}
 .toast.show{opacity:1}
 @media (prefers-reduced-motion:reduce){.toast,.top,.tabs{transition:none}}
+.ptr{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 8px);z-index:50;display:flex;align-items:center;gap:8px;
+  background:var(--surface);color:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;
+  box-shadow:0 4px 14px rgba(0,0,0,.12);transform:translate(-50%,-80px);opacity:0;pointer-events:none}
+.ptr svg{width:16px;height:16px;transition:transform .15s}
+.ptr.ready svg{transform:rotate(180deg)}
+.ptr.spin svg{animation:ptrspin .8s linear infinite}
+@keyframes ptrspin{to{transform:rotate(360deg)}}
+.ptr.back{transition:transform .25s ease,opacity .25s ease}
+@media (prefers-reduced-motion:reduce){.ptr.spin svg{animation:none}}
 </style>
 
 </head>
@@ -164,6 +173,7 @@ main{max-width:640px;margin:0 auto;padding:8px 16px 0}
   <div class="tabs-inner" role="tablist" id="tabs"></div>
 </nav>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="ptr" id="ptr" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg><span id="ptr-text">Pull to refresh</span></div>
 
 <script>
 const SHARE_URL = "https://claude.ai/artifact/RX61NgzGn5qjsUkfyuA59C";
@@ -378,17 +388,59 @@ $('#share').addEventListener('click', async ()=>{
 });
 $('#share-copy').addEventListener('click', ()=> copyText($('#share-url').value, $('#share-url')));
 
+async function loadFeed(){
+  const r = await fetch('feed.json?t=' + Date.now(), {cache:'no-store'});
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
+let lastCheck = 0, loading = false;
+async function refreshFeed(show){
+  if (loading) return; loading = true;
+  try{
+    const f = await loadFeed();
+    const changed = !state.feed || f.updated !== state.feed.updated || f.items.length !== state.feed.items.length;
+    state.feed = f; lastCheck = Date.now();
+    if (changed) render();
+    if (show) toast(changed ? 'New posts loaded' : 'Up to date');
+  }catch(err){
+    if (!state.feed) $('#feed').innerHTML = `<div class="empty"><b>Feed didn't load</b>Pull down to try again.</div>`;
+    else if (show) toast("Couldn't refresh. Try again.");
+  }finally{ loading = false; }
+}
 async function boot(){
   renderTabs(); renderFilters();
-  try{
-    const r = await fetch('feed.json', {cache:'no-store'});
-    if (!r.ok) throw new Error(r.status);
-    state.feed = await r.json();
-    render();
-  }catch(err){
-    $('#feed').innerHTML = `<div class="empty"><b>Feed didn't load</b>Refresh the page. If it keeps happening, the morning scan may not have finished yet.</div>`;
-  }
+  await refreshFeed(false);
 }
+/* check for new posts whenever the app comes back to the screen */
+document.addEventListener('visibilitychange', ()=>{ if (document.visibilityState === 'visible' && Date.now() - lastCheck > 60000) refreshFeed(false); });
+window.addEventListener('pageshow', e=>{ if (e.persisted) refreshFeed(false); });
+window.addEventListener('focus', ()=>{ if (Date.now() - lastCheck > 60000) refreshFeed(false); });
+/* pull down at the top of the feed to refresh */
+(function(){
+  const el = document.getElementById('ptr'), txt = document.getElementById('ptr-text');
+  const LIMIT = 70;
+  let startY = null, dist = 0;
+  function show(d){ el.classList.remove('back'); el.style.opacity = Math.min(1, d / 40); el.style.transform = `translate(-50%, ${Math.min(d, 90) - 80}px)`; }
+  function hide(){ el.classList.add('back'); el.style.opacity = 0; el.style.transform = 'translate(-50%,-80px)'; el.classList.remove('ready','spin'); }
+  window.addEventListener('touchstart', e=>{ startY = (window.scrollY <= 0 && e.touches.length === 1) ? e.touches[0].clientY : null; dist = 0; }, {passive:true});
+  window.addEventListener('touchmove', e=>{
+    if (startY === null || loading) return;
+    dist = e.touches[0].clientY - startY;
+    if (dist <= 0 || window.scrollY > 0){ dist = 0; hide(); return; }
+    show(dist * 0.6);
+    const ready = dist * 0.6 >= LIMIT;
+    el.classList.toggle('ready', ready);
+    txt.textContent = ready ? 'Release to refresh' : 'Pull to refresh';
+  }, {passive:true});
+  window.addEventListener('touchend', async ()=>{
+    if (startY === null) return;
+    const go = dist * 0.6 >= LIMIT; startY = null;
+    if (!go){ hide(); return; }
+    el.classList.remove('ready'); el.classList.add('spin'); txt.textContent = 'Refreshing…';
+    await refreshFeed(true);
+    hide();
+  }, {passive:true});
+})();
 /* hide header and tab bar while scrolling down, bring them back on scroll up */
 (function(){
   const top = document.querySelector('.top'), bar = document.querySelector('.tabs');
