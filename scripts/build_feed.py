@@ -125,10 +125,10 @@ def gather(since, lookback_days):
 RULES = [
     # (type, heat, weight, keywords)
     ("buyer", "Hot", 6, ["looking for a supplier", "seeking suppliers", "rfp", "request for proposal", "shortage"]),
-    ("growth", "Warm", 4, ["new plant", "new facility", "opens", "opening", "expansion", "expands", "invests", "investment",
-                           "production line", "new line", "jobs", "development agreement", "multi-unit", "units", "launches",
-                           "rollout", "co-packer", "co-manufactur", "commissary", "ghost kitchen", "funding", "raises"]),
-    ("pricing", "Warm", 4, ["price increase", "price hike", "prices rise", "surcharge", "tariff", "duties", "anti-dumping", "cost"]),
+    ("growth", "Warm", 4, ["new plant", "new facility", "opens new", "to open", "expansion", "expands", "invests", "investment",
+                           "production line", "new line", "new jobs", "development agreement", "unit deal", "unit agreement",
+                           "co-packer", "co-manufactur", "commissary", "ghost kitchen", "raises $", "funding round", "breaks ground"]),
+    ("pricing", "Warm", 4, ["price increase", "price hike", "prices rise", "raising prices", "surcharge", "tariff", "duties", "anti-dumping"]),
     ("mna", "Warm", 3, ["acquires", "acquisition", "to acquire", "merger", "buyout", "private equity", "sells to"]),
     ("regulation", "Watch", 2, ["pfas", "ban", "epr", "extended producer", "regulation", "law", "bill"]),
     ("chain", "Watch", 1, ["mcdonald", "burger king", "wendy", "kfc", "taco bell", "chick-fil-a", "starbucks", "subway", "domino"]),
@@ -151,14 +151,21 @@ PRODUCT_MAP = [
     ("Cold chain shippers", ["cold chain", "insulated", "shipper", "perishable", "pharmacy"]),
     ("Gel packs", ["gel pack", "cold chain", "refrigerant", "perishable"]),
 ]
-NOISE = ["recipe", "horoscope", "stock price target", "shares of", "earnings call transcript", "obituary", "review:"]
+NOISE = ["recipe", "horoscope", "stock price", "shares of", "earnings call", "obituary", "review:", "market size", "market report",
+         "feasibility", "setup cost", "cost report", "forecast", "cagr", "franchise costs", "franchise cost", "fees, profit",
+         "bankrupt", "chapter 11", "layoff", "closing", "closes", "shutter", "value menu", "perception", "hidden liability",
+         "why multi-unit", "why multi-brand", "top 10", "best ", "how to ", "webinar", "sponsored", "india", "indian", " uk ",
+         "australia", "canada's", "europe", "value perception"]
+BLOCKED_SOURCES = ["openpr", "quiver", "insider media", "indian printer", "1851 franchise", "ein presswire", "einpresswire",
+                   "marketsandmarkets", "yahoo finance", "benzinga", "zacks", "seeking alpha", "motley fool", "marketbeat",
+                   "globenewswire", "openpr.com", "news.google"]
 
 
 def keyword_pick(cands):
     scored = []
     for c in cands:
         text = (c["title"] + " " + c["desc"]).lower()
-        if any(n in text for n in NOISE):
+        if any(n in text for n in NOISE) or any(b in c["source"].lower() for b in BLOCKED_SOURCES):
             continue
         if not any(r in text for r in RELEVANCE):
             continue
@@ -173,6 +180,8 @@ def keyword_pick(cands):
         if not best:
             continue
         typ, heat, _ = best
+        if score < 4:
+            continue
         if any(k in text for k in COLD):
             lane = "B" if not any(k in text for k in ["restaurant", "foodservice", "franchise"]) else "A+B"
             if typ in ("chain",):
@@ -237,7 +246,7 @@ def cover_stat(title, typ):
 
 def keyword_items(cands, today):
     out = []
-    for score, c, typ, heat, lane, products in keyword_pick(cands)[:MAX_NEW]:
+    for score, c, typ, heat, lane, products in keyword_pick(cands)[:6]:
         pub = c["published_dt"].astimezone(TZ).date().isoformat()
         out.append({
             "id": f"{slug(c['title'])}-{pub}", "found": today, "published": pub,
@@ -309,6 +318,17 @@ def main():
     with open(FEED_PATH, encoding="utf-8") as f:
         feed = json.load(f)
     items = feed.get("items", [])
+    # clear out weak keyword picks from earlier runs that today's filters would reject
+    generic = set(SIGNALS.values())
+    def weak(i):
+        if i.get("signal") not in generic:
+            return False
+        t = (i.get("headline", "") + " ").lower()
+        return any(n in t for n in NOISE) or any(b in i.get("source", "").lower() for b in BLOCKED_SOURCES)
+    dropped = [i for i in items if weak(i)]
+    items = [i for i in items if not weak(i)]
+    if dropped:
+        print(f"removed {len(dropped)} weak earlier picks", file=sys.stderr)
     seen_urls = {i["url"] for i in items}
     seen_titles = {slug(i.get("headline", ""), 60) for i in items}
 
