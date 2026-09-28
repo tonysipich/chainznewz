@@ -1,0 +1,397 @@
+{
+  "updated": "2026-09-28T04:08:43-04:00",
+  "window": {
+    "from": "2026-09-23",
+    "to": "2026-09-28"
+  },
+  "items": [
+    {
+      "id": "kfc-open-house-2026-09-24",
+      "found": "2026-09-25",
+      "published": "2026-09-24",
+      "source": "Nation's Restaurant News",
+      "url": "https://www.nrn.com/quick-service/kfc-unveils-open-house-prototype-as-a-centerpiece-of-its-u-s-comeback-plan",
+      "headline": "KFC unveils 'Open House' prototype as centerpiece of its U.S. comeback plan",
+      "summary": "KFC opened its Open House prototype in McKinney, Texas, as a test bed for new service formats and dining room upgrades.",
+      "signal": "New formats mean new to-go and dine-in packaging specs. Franchisees rebuilding stores often re-shop consumables.",
+      "heat": "Watch",
+      "lane": "A",
+      "type": "chain",
+      "company": "KFC U.S.",
+      "products": [
+        "To-go packaging",
+        "Gloves",
+        "Can liners"
+      ],
+      "nextStep": "Mostly a national contract. Watch for KFC franchisee groups that announce remodels in your region.",
+      "cover": {
+        "kicker": "New prototype",
+        "stat": "Open House",
+        "sub": "McKinney, TX"
+      },
+      "opener": ""
+    },
+    {
+      "id": "sysco-restaurant-depot-independents",
+      "found": "2026-09-25",
+      "published": "",
+      "dateNote": "Date unconfirmed. Deal still pending approval.",
+      "source": "Restaurant Business",
+      "url": "https://www.restaurantbusinessonline.com/financing/restaurants-are-worried-about-sysco-restaurant-depot-deal-should-they-be",
+      "headline": "Restaurants are worried about the Sysco–Restaurant Depot deal",
+      "summary": "Independent operators fear higher prices and fewer options if Sysco's $29.1B purchase of Restaurant Depot goes through. Median pretax margin for independents is down to 2.8%.",
+      "signal": "Independents are nervous about losing their cash-and-carry backup. They'll listen to a second source on disposables.",
+      "heat": "Watch",
+      "lane": "A",
+      "type": "mna",
+      "company": "Sysco / Restaurant Depot",
+      "products": [
+        "Gloves",
+        "Can liners",
+        "Straws",
+        "To-go packaging"
+      ],
+      "nextStep": "Use it as an opener with independent and small multi-unit operators.",
+      "cover": {
+        "kicker": "Distributor deal",
+        "stat": "$29.1B",
+        "sub": "Sysco + Restaurant Depot"
+      },
+      "opener": "Hi [Name],\nA lot of independents I talk to are worried about what the Sysco and Restaurant Depot deal does to their prices. I'd like to be your backup on gloves, liners and to-go so you're not stuck with one option. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "mcdonalds-next-franchisee-support-2026-09-23",
+      "found": "2026-09-24",
+      "published": "2026-09-23",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/23/mcdonalds-investor-day-remodels-training-chicken-growth-plans.html",
+      "headline": "McDonald's plans $8.5B in franchisee support for remodels and growth",
+      "summary": "At its investor day, McDonald's laid out its 'Next' strategy: remodels, training, tech and chicken growth, backed by $8.5B in franchisee support.",
+      "signal": "Franchisees are about to spend on remodels. Consumables are mostly locked in through the system, so this is background.",
+      "heat": "Watch",
+      "lane": "A",
+      "type": "chain",
+      "company": "McDonald's",
+      "products": [
+        "Gloves",
+        "Can liners"
+      ],
+      "nextStep": "Watch only. National supply contracts cover most of this.",
+      "cover": {
+        "kicker": "Franchisee support",
+        "stat": "$8.5B",
+        "sub": "McDonald's 'Next' plan"
+      },
+      "opener": ""
+    },
+    {
+      "id": "containerboard-index-sept-2026",
+      "found": "2026-09-24",
+      "published": "2026-09-23",
+      "source": "Packaging Dive",
+      "url": "https://www.packagingdive.com/news/fastmarkets-risi-containerboard-pricing-september-2026/830365/",
+      "headline": "Index partially recognizes the third containerboard price hike of 2026",
+      "summary": "Fastmarkets RISI recognized part of the latest producer increase. It's the third containerboard hike this year.",
+      "signal": "Box and shipper costs keep climbing. Buyers will be seeing it on their next invoice.",
+      "heat": "Warm",
+      "lane": "A+B",
+      "type": "pricing",
+      "company": "Corrugated market",
+      "products": [
+        "Boxes",
+        "Cold chain shippers"
+      ],
+      "nextStep": "Call box and shipper buyers. Offer to check what they're paying against the market.",
+      "cover": {
+        "kicker": "Price increase",
+        "stat": "3rd hike",
+        "sub": "Containerboard, 2026"
+      },
+      "opener": "Hi [Name],\nContainerboard just took its third price hike this year, and it's going to show up on box invoices. I can run a quick check on what you're paying for boxes and shippers. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "aldi-ready-meals-2026-09-22",
+      "found": "2026-09-23",
+      "published": "2026-09-22",
+      "source": "Grocery Dive",
+      "url": "https://www.grocerydive.com/news/aldi-launches-first-ready-made-meals/830985/",
+      "headline": "Aldi to roll out its first ready-made meals line",
+      "summary": "Seven fresh meals: five microwavable single-serves under $8 and two oven-ready family sizes under $15. Rollout starts in October and goes nationwide by January 2027.",
+      "signal": "Whoever co-packs these is scaling fast and needs sealed meal trays, lidding film and sealers now.",
+      "heat": "Hot",
+      "lane": "A",
+      "type": "growth",
+      "company": "Aldi U.S. (co-packer TBD)",
+      "products": [
+        "Meal trays",
+        "Sealing film",
+        "Tray sealers"
+      ],
+      "nextStep": "Find the co-packer from the 'distributed by' line on the label once the meals hit shelves in October.",
+      "cover": {
+        "kicker": "New product line",
+        "stat": "7 meals",
+        "sub": "Aldi, nationwide by Jan"
+      },
+      "opener": "Hi [Name],\nI saw you're producing the new Aldi ready meals. Congrats. When a line ramps that fast, tray and film supply is usually where it gets tight. I supply meal trays, lidding film and sealers and can get you a side-by-side quick. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "starbird-washington-17-units",
+      "found": "2026-09-23",
+      "published": "2026-09-22",
+      "source": "QSR Magazine",
+      "url": "https://www.qsrmagazine.com/news/starbird-signs-17-unit-agreement-in-washington/",
+      "headline": "Starbird signs 17-unit deal in Washington with Mehta Investment Group",
+      "summary": "The fast-casual chicken brand is entering Washington through a 17-restaurant development deal with franchisee Mehta Investment Group.",
+      "signal": "A franchise group opening 17 stores needs gloves, liners and to-go supply from day one.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "growth",
+      "company": "Mehta Investment Group",
+      "products": [
+        "To-go packaging",
+        "Gloves",
+        "Can liners",
+        "Straws"
+      ],
+      "nextStep": "Find the ops or purchasing lead at Mehta Investment Group. Ask what's brand-mandated and what's open.",
+      "cover": {
+        "kicker": "Franchise deal",
+        "stat": "17 units",
+        "sub": "Starbird, Washington"
+      },
+      "opener": "Hi [Name],\nCongrats on the Starbird deal. 17 stores is a big build. Most brands leave some room on gloves, liners and back-of-house items, and that's where I can save you real money. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "sabert-butterfly-equity",
+      "found": "2026-09-23",
+      "published": "2026-09-22",
+      "source": "Packaging Dive",
+      "url": "https://www.packagingdive.com/news/butterfly-equity-acquires-sabert-food-packaging/830986/",
+      "headline": "Sabert sells to private equity firm Butterfly Equity",
+      "summary": "Butterfly Equity is buying Sabert, maker of hinged to-go containers, salad bowls, oven-safe meal trays and platters. The deal is expected to close in Q4.",
+      "signal": "New PE owners often trim SKUs and push price. Buyers running on Sabert may want a second source.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "mna",
+      "company": "Sabert",
+      "products": [
+        "To-go packaging",
+        "Meal trays"
+      ],
+      "nextStep": "Pitch a second-source quote to accounts running Sabert containers and trays.",
+      "cover": {
+        "kicker": "Supplier acquired",
+        "stat": "PE buyout",
+        "sub": "Sabert → Butterfly Equity"
+      },
+      "opener": "Hi [Name],\nWith Sabert being sold to a private equity firm, a lot of buyers are wondering what happens to pricing and SKUs. I can quote you a backup on your to-go containers and trays so you're covered either way. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "plastics-tariffs-2026-09",
+      "found": "2026-09-23",
+      "published": "2026-09-22",
+      "source": "Packaging Dive",
+      "url": "https://www.packagingdive.com/news/plastics-packaging-canada-trade-war-iran-converters/829944/",
+      "headline": "Plastics get pulled into tariff turmoil",
+      "summary": "Plastic bags, lids and caps face tariff rates as high as 50%, adding cost pressure across plastic packaging.",
+      "signal": "Can liners, lids and plastic to-go items are about to cost more. It's a good reason to call.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "pricing",
+      "company": "Plastic packaging market",
+      "products": [
+        "Can liners",
+        "To-go packaging",
+        "Straws"
+      ],
+      "nextStep": "Call liner and lid buyers. Offer a price check before their next order.",
+      "cover": {
+        "kicker": "Tariffs",
+        "stat": "50%",
+        "sub": "Plastic bags, lids, caps"
+      },
+      "opener": "Hi [Name],\nThe new tariffs on plastic bags and lids are going to hit liner and lid prices. Before your next order, let me price check what you're paying. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "pizza-box-petition-2026-09",
+      "found": "2026-09-23",
+      "published": "2026-09-22",
+      "source": "Packaging Dive",
+      "url": "https://www.packagingdive.com/news/usitc-commerce-pizza-boxes-unfair-trade-duties-smurfit-westrock-pratt-industries/829983/",
+      "headline": "Smurfit Westrock and Pratt seek duties on imported pizza boxes",
+      "summary": "The two U.S. producers petitioned for anti-dumping duties on corrugated pizza boxes from China, Malaysia and Turkey.",
+      "signal": "If duties land, imported pizza box prices go up. Pizzerias buying imports should lock in a plan now.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "pricing",
+      "company": "Pizza box market",
+      "products": [
+        "To-go packaging",
+        "Boxes"
+      ],
+      "nextStep": "Reach pizza chains and independents on imported boxes. Offer a domestic and import comparison.",
+      "cover": {
+        "kicker": "Trade case",
+        "stat": "Pizza boxes",
+        "sub": "China · Malaysia · Turkey"
+      },
+      "opener": "Hi [Name],\nThere's a trade case that could put duties on imported pizza boxes. If you're buying imports, now's a good time to look at a backup. I can put numbers side by side for you. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "corrugated-box-index-proposal",
+      "found": "2026-09-23",
+      "published": "2026-09-22",
+      "source": "Packaging Dive",
+      "url": "https://www.packagingdive.com/news/fastmarkets-corrugated-box-cost-index-proposal-containerboard/829870/",
+      "headline": "Fastmarkets RISI plans to add a corrugated box cost index",
+      "summary": "A proposed monthly box cost index could change how corrugated pricing gets set and passed through to buyers.",
+      "signal": "Background for box pricing talks. Watch how buyers react once contracts start tying to it.",
+      "heat": "Watch",
+      "lane": "A+B",
+      "type": "pricing",
+      "company": "Corrugated market",
+      "products": [
+        "Boxes",
+        "Cold chain shippers"
+      ],
+      "nextStep": "Watch only. Useful context for box contract talks.",
+      "cover": {
+        "kicker": "Market pricing",
+        "stat": "New index",
+        "sub": "Corrugated box costs"
+      },
+      "opener": ""
+    },
+    {
+      "id": "hb-protein-smoothies-250-pipeline-2026-09-25",
+      "found": "2026-09-28",
+      "published": "2026-09-25",
+      "source": "Franchise Times",
+      "url": "https://www.franchisetimes.com/franchise_news/experienced-franchisee-signings-push-hb-protein-smoothies-pipeline-past-250-locations/article_09b72de0-8398-494c-b959-e22019e53c9a.html",
+      "headline": "New franchisee signings push HB Protein Smoothies' pipeline past 250 locations",
+      "summary": "New deals include 6+ units in South Florida for 7 Brew owner Bob Morris (first opening within 90 days), 5–10 in Fort Myers, and 12+ across Arizona, Idaho and Oregon for the Smooth Papas group, with Phoenix possibly opening in November. The brand has only 3 stores open today.",
+      "signal": "Smoothie shops burn through cups, straws, lids and gloves. Operators opening their first units in the next 90 days haven't locked in suppliers yet.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "growth",
+      "company": "HB Protein Smoothies franchisees",
+      "products": [
+        "Straws",
+        "To-go packaging",
+        "Gloves",
+        "Can liners"
+      ],
+      "nextStep": "Reach Bob Morris (South Florida) and Chris Phillips of Smooth Papas (Phoenix) before their first openings. Ask what the brand mandates and what's open.",
+      "cover": {
+        "kicker": "Franchise pipeline",
+        "stat": "250+ units",
+        "sub": "HB Protein Smoothies"
+      },
+      "opener": "Hi [Name],\nCongrats on signing with HB Protein Smoothies. With your first store coming up soon, I'd like to help on cups, straws, lids and gloves before you lock in a supplier. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "amys-kitchen-santa-rosa-consolidation-2026-09-25",
+      "found": "2026-09-28",
+      "published": "2026-09-25",
+      "source": "Food Business News",
+      "url": "https://www.foodbusinessnews.net/articles/31076-amys-kitchen-closing-california-plant",
+      "headline": "Amy's Kitchen closing its Santa Rosa, Calif., plant",
+      "summary": "Amy's is closing Santa Rosa and cutting about 260 roles. Pizza, soup and burrito work moves to Medford, Ore., and entree production moves to Pocatello, Idaho.",
+      "signal": "Pocatello and Medford are picking up volume, and moving lines is when plants re-spec trays, film and packaging supplies.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "growth",
+      "company": "Amy's Kitchen",
+      "products": [
+        "Meal trays",
+        "Sealing film",
+        "Gloves",
+        "Boxes"
+      ],
+      "nextStep": "Call the purchasing or packaging manager at Amy's Pocatello, Idaho plant about entree trays, film and gloves as volume moves in.",
+      "cover": {
+        "kicker": "Plant consolidation",
+        "stat": "2 plants",
+        "sub": "Volume to Medford + Pocatello"
+      },
+      "opener": "Hi [Name],\nI saw Amy's is moving entree production to Pocatello. When volume shifts that fast, trays, film and gloves are usually where supply gets tight. I'd like to be a backup source for you. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "tandem-foods-42m-bar-plant-2026-09-25",
+      "found": "2026-09-28",
+      "published": "2026-09-25",
+      "source": "Food Business News",
+      "url": "https://www.foodbusinessnews.net/articles/31077-tandem-foods-invests-42-million-in-bar-production-plant",
+      "headline": "Tandem Foods invests $42 million in bar production plant",
+      "summary": "Tandem Foods is adding 79,000 sq ft in O'Hara Township, near Pittsburgh, for a new cold-form bar line. It's expected to add 83 jobs over three years, the largest investment in the company's 40-year history.",
+      "signal": "A new line means new demand for shipper cases and gloves, and the buyer will be setting up vendors for it.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "growth",
+      "company": "Tandem Foods",
+      "products": [
+        "Boxes",
+        "Gloves"
+      ],
+      "nextStep": "Reach the purchasing manager at Tandem Foods' Pittsburgh-area plant about cases and gloves for the new line.",
+      "cover": {
+        "kicker": "New production line",
+        "stat": "$42M",
+        "sub": "Tandem Foods, Pittsburgh"
+      },
+      "opener": "Hi [Name],\nCongrats on the new bar line near Pittsburgh. Before it ramps, I'd like to quote your shipper cases and gloves. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "federal-pfas-packaging-bill-2026-09-26",
+      "found": "2026-09-28",
+      "published": "2026-09-26",
+      "source": "Office of Sen. Maggie Hassan",
+      "url": "https://www.hassan.senate.gov/news/press-releases/senators-hassan-tuberville-introduce-legislation-to-ban-toxic-forever-chemicals-in-food-packaging",
+      "headline": "Senators Hassan and Tuberville reintroduce bill to ban PFAS in food packaging",
+      "summary": "The bipartisan Keep Food Containers Safe from PFAS Act would ban PFAS in food wrappers and packaging nationwide. Several states already have their own bans.",
+      "signal": "It's still a pending bill, but it gives operators a reason to check if their fiber to-go items are PFAS-free.",
+      "heat": "Watch",
+      "lane": "A",
+      "type": "regulation",
+      "company": "Food packaging market",
+      "products": [
+        "To-go packaging",
+        "Straws"
+      ],
+      "nextStep": "Watch only. Use it as a talking point with buyers of molded fiber and paper to-go items.",
+      "cover": {
+        "kicker": "Federal bill",
+        "stat": "PFAS ban",
+        "sub": "Food packaging, nationwide"
+      },
+      "opener": ""
+    },
+    {
+      "id": "naw-oregon-epr-appeal-2026-09-25",
+      "found": "2026-09-28",
+      "published": "2026-09-25",
+      "source": "Packaging Dive",
+      "url": "https://www.packagingdive.com/news/wholesalers-appeal-oregon-epr-decision-ninth-circuit/831347/",
+      "headline": "NAW appeals ruling that upheld Oregon's EPR packaging law",
+      "summary": "The National Association of Wholesaler-Distributors filed an appeal with the Ninth Circuit after a judge upheld Oregon's extended producer responsibility law. NAW has similar challenges pending in California and Colorado.",
+      "signal": "EPR fees could push distributor prices up in Oregon, California and Colorado. It's background for pricing talks there.",
+      "heat": "Watch",
+      "lane": "A+B",
+      "type": "regulation",
+      "company": "Distributors / EPR states",
+      "products": [
+        "To-go packaging",
+        "Boxes",
+        "Can liners"
+      ],
+      "nextStep": "Watch only. Bring it up with West Coast accounts when discussing pricing.",
+      "cover": {
+        "kicker": "EPR lawsuit",
+        "stat": "Appeal",
+        "sub": "Oregon packaging law"
+      },
+      "opener": ""
+    }
+  ]
+}
