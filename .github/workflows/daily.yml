@@ -1,0 +1,33 @@
+name: ChainzNewz daily refresh
+
+on:
+  schedule:
+    - cron: "10 9 * * 1-5"   # weekdays about 5am Eastern (4am in winter)
+  workflow_dispatch:          # adds a "Run workflow" button for testing
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull today's news into feed.json
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/build_feed.py
+
+      - name: Save feed.json (Netlify redeploys automatically)
+        run: |
+          git config user.name "ChainzNewz Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add feed.json
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "Daily news refresh $(date -u +%Y-%m-%d)"
+          git push
