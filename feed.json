@@ -1,23 +1,73 @@
 {
-  "updated": "2026-09-28T10:46:22-04:00",
+  "updated": "2026-09-28T11:05:26-04:00",
   "window": {
     "from": "2026-09-23",
     "to": "2026-09-28"
   },
   "items": [
     {
-      "id": "disposable-gloves-plant-setup-cost-2026-feasibil-2026-09-28",
+      "id": "tgi-fridays-signs-deal-to-open-15-restaurants-in-2026-09-27",
       "found": "2026-09-28",
-      "published": "2026-09-28",
-      "source": "openPR.com",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOd2N3YjRudF9JU09idll2SzV0NGh0WmtpNnRRMlNZcXJicnpTYjE5OWtTNFhxaFJBcGtPSTM3Q3cwY0NMVzNPVDlpQmY2RG1Ea2tLSjB5UlZoZnZUSkl1anpPdUZZaVQtWEhVUGR2LUZoR21NREs1S2lzOWdCcE91VWtwVzJWYmhWTEVJNnBFNk1TMmhGMDh1bA?oc=5",
-      "headline": "Disposable Gloves Plant Setup Cost 2026: Feasibility Study Report, CapEx, OpEx, Investment & Business Plan",
-      "summary": "Disposable Gloves Plant Setup Cost 2026: Feasibility Study Report, CapEx, OpEx, Investment & Business Plan openPR.com",
+      "published": "2026-09-27",
+      "source": "Retail News Asia",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRmxkM0tUMUs4S0pqTFNOYkZydDh5UkkxYnlaVDNVa1BUX2tsaTVya1ZlOUYwMUV4NzlsRDR2REdRQ0lNUDZkdGZ3VExsUk1kRFp4Q0JVSVpBNjU4UTVpaEpSWWJUSk80b1ZoUXRFOFhaNDd0YWtIbzFyQkFxSXREbEtUVXpaVjZl?oc=5",
+      "headline": "TGI Fridays Signs Deal to Open 15 Restaurants in Pakistan",
+      "summary": "TGI Fridays Signs Deal to Open 15 Restaurants in Pakistan Retail News Asia",
       "signal": "More volume means new buys on packaging and supplies, and vendors often get set up fresh.",
       "heat": "Warm",
       "lane": "A",
       "type": "growth",
-      "company": "openPR.com",
+      "company": "Retail News Asia",
+      "products": [
+        "To-go packaging",
+        "Gloves",
+        "Can liners"
+      ],
+      "nextStep": "Find the purchasing or operations lead and ask what they're buying for the new volume.",
+      "cover": {
+        "kicker": "Growth signal",
+        "stat": "15 Restaura",
+        "sub": "Retail News Asia"
+      },
+      "opener": "Hi [Name],\nCongrats on the growth. When volume ramps up, packaging and supplies are usually where it gets tight. I'd like to quote you a backup source. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "pcc-to-open-17th-store-2026-09-25",
+      "found": "2026-09-28",
+      "published": "2026-09-25",
+      "source": "Grocery Dive",
+      "url": "https://www.grocerydive.com/news/pcc-community-markets-new-store-seattle-grocery/831340/",
+      "headline": "PCC to open 17th store",
+      "summary": "The grocery co-op’s newest location is set to debut in mid-October in Seattle’s Madison Valley district.",
+      "signal": "More volume means new buys on packaging and supplies, and vendors often get set up fresh.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "growth",
+      "company": "Grocery Dive",
+      "products": [
+        "To-go packaging"
+      ],
+      "nextStep": "Find the purchasing or operations lead and ask what they're buying for the new volume.",
+      "cover": {
+        "kicker": "Growth signal",
+        "stat": "Growing",
+        "sub": "Grocery Dive"
+      },
+      "opener": "Hi [Name],\nCongrats on the growth. When volume ramps up, packaging and supplies are usually where it gets tight. I'd like to quote you a backup source. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "nestl-purina-invests-55-million-in-italian-pet-f-2026-09-24",
+      "found": "2026-09-28",
+      "published": "2026-09-24",
+      "source": "PetfoodIndustry",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTUlJZnZKSWlmcnp1V3J6aG5pVGFKU3VBTGJ6Qjh2clZaalc0WnBZeUJDMDVoODV2WHRZZlgzc0Z3cDhwclJRVFdlZmpnbTBwZldtbjBqN3M2OTVydXFDY2FSM2RadmFIZ2t4VW5saVF3YmpKSnlyc3JMYmJ5aFRpeTMtaUhaZWFtd1ZIOFVVNmxacnFVanoxeW9tUFN4bm9xaWc4bjBnSUdBMlYwOUhFSHMxSTRHWmZCYkRCY2w3Q3NyMWhPU3VKU05tLWpMWDg?oc=5",
+      "headline": "Nestlé Purina invests €55 million in Italian pet food plant",
+      "summary": "Nestlé Purina invests €55 million in Italian pet food plant PetfoodIndustry",
+      "signal": "More volume means new buys on packaging and supplies, and vendors often get set up fresh.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "growth",
+      "company": "PetfoodIndustry",
       "products": [
         "Gloves"
       ],
@@ -25,237 +75,81 @@
       "cover": {
         "kicker": "Growth signal",
         "stat": "Growing",
-        "sub": "openPR.com"
+        "sub": "PetfoodIndustry"
       },
       "opener": "Hi [Name],\nCongrats on the growth. When volume ramps up, packaging and supplies are usually where it gets tight. I'd like to quote you a backup source. Can you and I discuss?\nTony"
     },
     {
-      "id": "multi-unit-dave-s-hot-chicken-franchisee-declare-2026-09-28",
+      "id": "hassan-reintroduces-pfas-food-packaging-ban-bill-2026-09-27",
       "found": "2026-09-28",
-      "published": "2026-09-28",
-      "source": "QSR Magazine",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSDVqLW9CeVhGSFVzazVOTUVTa3ZZR0FYYTVpRmY0eVR1SW1ZQU16ZnJrX3RLRHVMQkZsRGZzbW5KM05MRWpRZWpYc1FkbUU0QjZiclRwYXVyZGh4bVJzQzlCeG9lTnVhajlSSG1FRTZSNkNYMnZJUVJsWmZDLTdPQi1CZzBCVW5RZFlTbW10Ukd1Tjd1YUxvMzNn?oc=5",
-      "headline": "Multi-Unit Dave’s Hot Chicken Franchisee Declares Bankruptcy",
-      "summary": "Multi-Unit Dave’s Hot Chicken Franchisee Declares Bankruptcy QSR Magazine",
-      "signal": "More volume means new buys on packaging and supplies, and vendors often get set up fresh.",
-      "heat": "Warm",
+      "published": "2026-09-27",
+      "source": "Hoodline",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSFk1XzRZeFZjMEhVaWRIN293Rmg3TGRLTU8yak1UdXN6S2xiZVZYNWlKNThMWXVWWlJCOVVENW5TN18xSWx0X2gtNDF1X2VYa2x1b0htQ1ZaVWdVaVlKbmUwM2RzMHBIUnl1Y3pidFdNU1NiTzcwVXR4WkZSb2tJZ1lZa28zMnU1b0t2WGxFbHdHQlZoMkQ3SjZDMmswZkg4cFBCdWtsZGdKUQ?oc=5",
+      "headline": "Hassan Reintroduces PFAS Food Packaging Ban Bill",
+      "summary": "Hassan Reintroduces PFAS Food Packaging Ban Bill Hoodline",
+      "signal": "Rules like this push buyers to re-check what they're using.",
+      "heat": "Watch",
       "lane": "A",
-      "type": "growth",
-      "company": "QSR Magazine",
+      "type": "regulation",
+      "company": "Hoodline",
       "products": [
-        "To-go packaging",
-        "Gloves",
-        "Can liners"
+        "Tray sealers"
       ],
-      "nextStep": "Find the purchasing or operations lead and ask what they're buying for the new volume.",
+      "nextStep": "Watch only. Use it as a talking point with buyers.",
       "cover": {
-        "kicker": "Growth signal",
-        "stat": "Growing",
-        "sub": "QSR Magazine"
+        "kicker": "Regulation",
+        "stat": "New rule",
+        "sub": "Hoodline"
       },
-      "opener": "Hi [Name],\nCongrats on the growth. When volume ramps up, packaging and supplies are usually where it gets tight. I'd like to quote you a backup source. Can you and I discuss?\nTony"
+      "opener": ""
     },
     {
-      "id": "7-eleven-rolls-out-value-menus-across-its-restau-2026-09-28",
+      "id": "sen-hassan-reintroduces-legislation-to-ban-pfas-2026-09-26",
       "found": "2026-09-28",
-      "published": "2026-09-28",
-      "source": "Restaurant Dive",
-      "url": "https://www.restaurantdive.com/news/7-eleven-adds-value-menus/831454/",
-      "headline": "7-Eleven rolls out value menus across its restaurant brands",
-      "summary": "The retailer has added meal deals and low-cost options across its Laredo Taco, Raise the Roost and Speedy Cafe restaurants.",
-      "signal": "Buyers are about to feel higher costs. It's a good reason to offer a price check.",
-      "heat": "Warm",
+      "published": "2026-09-26",
+      "source": "WMUR",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBCV1pvNE1SemhqejJ3RE13QmZxNGM2WG41OGtuaUhvbUlCZTNfamlyQnBxZ21MMFJiOHdVVnhOQlFZQmFHbGxCYThNZEFMSEJYck5teGNKb0NWenRoVGV4bUtMdjh0NENVcDdLMkZtTHJuczI4Z0xpQWpwZWxfVzQ?oc=5",
+      "headline": "Sen. Hassan reintroduces legislation to ban PFAS chemicals in food packaging",
+      "summary": "Sen. Hassan reintroduces legislation to ban PFAS chemicals in food packaging WMUR",
+      "signal": "Rules like this push buyers to re-check what they're using.",
+      "heat": "Watch",
       "lane": "A",
-      "type": "pricing",
-      "company": "Restaurant Dive",
-      "products": [
-        "Meal trays",
-        "To-go packaging",
-        "Gloves",
-        "Can liners"
-      ],
-      "nextStep": "Call buyers of these items and offer to check what they're paying.",
-      "cover": {
-        "kicker": "Price move",
-        "stat": "Price move",
-        "sub": "Restaurant Dive"
-      },
-      "opener": "Hi [Name],\nPrices are moving on packaging again. Before your next order, let me check what you're paying. Can you and I discuss?\nTony"
-    },
-    {
-      "id": "eton-pharmaceuticals-launches-impavido-in-the-u-2026-09-28",
-      "found": "2026-09-28",
-      "published": "2026-09-28",
-      "source": "Quiver Quantitative",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPalJ3ajROMkhoSjRtcGxjbjhDNGpjVjRzblZ5eWhXWVU5UmpZY1dwclJDd2Itb1E1alk5VkhNRDlpN1J0NWJyVHpyTy1SSTZDYUh3Nlo5RlNrVzdkTi1jTGFOUWNUMDRYUlc5MEdmT1hLSVZleXZFSGNMRlp3OTNoS0c0N2U2ckZBay12NDlxb2VOY2UzbWd1N2VGZFFlOFFpNHJUdFM0VWlWaWlXVjJBWF9hTkp5UFpDRktzZDAtU2NKQUo0NnR5bnZCQzA3VXBybnZmYXFSRER6MFk?oc=5",
-      "headline": "Eton Pharmaceuticals Launches IMPAVIDO in the U.S. with Expanded Patient Support and Specialty Pharmacy Access",
-      "summary": "Eton Pharmaceuticals Launches IMPAVIDO in the U.S. with Expanded Patient Support and Specialty Pharmacy Access Quiver Quantitative",
-      "signal": "More temperature-sensitive shipping means more liners, gel packs and shipper boxes.",
-      "heat": "Warm",
-      "lane": "B",
-      "type": "coldchain",
-      "company": "Quiver Quantitative",
-      "products": [
-        "Cold chain shippers"
-      ],
-      "nextStep": "Find the shipping or packaging lead and offer liners, gel packs and shippers.",
-      "cover": {
-        "kicker": "Cold chain",
-        "stat": "Cold chain",
-        "sub": "Quiver Quantitative"
-      },
-      "opener": "Hi [Name],\nI saw you're growing your cold shipping. I supply liners, gel packs and shipper boxes and can get you a side-by-side quick. Can you and I discuss?\nTony"
-    },
-    {
-      "id": "the-hidden-liability-of-an-outdated-building-why-2026-09-28",
-      "found": "2026-09-28",
-      "published": "2026-09-28",
-      "source": "Restaurant Dive",
-      "url": "https://www.restaurantdive.com/spons/the-hidden-liability-of-an-outdated-building-why-restaurants-and-retailers/831067/",
-      "headline": "The hidden liability of an outdated building: Why restaurants and retailers are digitizing their real estate portfolios",
-      "summary": "Outdated building records are costing retailers millions. Reality capture ends the guesswork.",
-      "signal": "Buyers are about to feel higher costs. It's a good reason to offer a price check.",
-      "heat": "Warm",
-      "lane": "A",
-      "type": "pricing",
-      "company": "Restaurant Dive",
-      "products": [
-        "To-go packaging",
-        "Gloves",
-        "Can liners"
-      ],
-      "nextStep": "Call buyers of these items and offer to check what they're paying.",
-      "cover": {
-        "kicker": "Price move",
-        "stat": "Price move",
-        "sub": "Restaurant Dive"
-      },
-      "opener": "Hi [Name],\nPrices are moving on packaging again. Before your next order, let me check what you're paying. Can you and I discuss?\nTony"
-    },
-    {
-      "id": "year-of-growth-at-400-strong-packaging-firm-desp-2026-09-28",
-      "found": "2026-09-28",
-      "published": "2026-09-28",
-      "source": "Insider Media Ltd",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSFhJMGMxVHAwbUNDRWRTVEZmUjRSZXVMOWNlZi02Yi0wbHNBdFdFNWZnX1pLSkVBSmRxNEZOcm16a1hIWlVwQ1pMZS1Ddm9tcXNySWtjMmVLSlJqZjNHMDhUX0lwR0gyVEJfV2g2Yk9yRWNjX1BoTzlla2FpVVhmYTFEalNhdUdkbWlwNDNQS0JkSExoS3ZoY25PeG9tNG1XbGJqZG9Ba0FIa2l5ZFZnbHF6c1pCVHczM3N2T0xCd29WVjdyM3RwTDg5Q2JJbzJ6MUU4cHVDa052Vm85?oc=5",
-      "headline": "Year of growth at 400-strong packaging firm despite “pricing pressures” and “inflationary cost increases”",
-      "summary": "Year of growth at 400-strong packaging firm despite “pricing pressures” and “inflationary cost increases” Insider Media Ltd",
-      "signal": "Buyers are about to feel higher costs. It's a good reason to offer a price check.",
-      "heat": "Warm",
-      "lane": "A",
-      "type": "pricing",
-      "company": "Insider Media Ltd",
+      "type": "regulation",
+      "company": "WMUR",
       "products": [
         "To-go packaging"
       ],
-      "nextStep": "Call buyers of these items and offer to check what they're paying.",
+      "nextStep": "Watch only. Use it as a talking point with buyers.",
       "cover": {
-        "kicker": "Price move",
-        "stat": "Price move",
-        "sub": "Insider Media Ltd"
+        "kicker": "Regulation",
+        "stat": "New rule",
+        "sub": "WMUR"
       },
-      "opener": "Hi [Name],\nPrices are moving on packaging again. Before your next order, let me check what you're paying. Can you and I discuss?\nTony"
+      "opener": ""
     },
     {
-      "id": "why-multi-unit-multi-brand-operators-are-adding-2026-09-25",
+      "id": "california-pfas-food-packaging-ban-explained-2026-09-25",
       "found": "2026-09-28",
       "published": "2026-09-25",
-      "source": "1851 Franchise",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQlo5VDlFV2hEcU51SWJiN21kbFhWdjRXTnkyYUdLVDBKTTJ1MEljTERoWjQ2a2dwX05WZXdaakVTZWFuWF9FdTNGSDVmVXVtbDJYdTNiejJuQlR6eDZpdTZKcmF1S2habktoU3pMUGMwSUp6djh1c1Z5VjhCTzRaNy1QckpSTGpibUQxb2ZSdjhUcVVZLVJnVUlXUzNZUU05RWZObHN4MVBlZFloT0dWZkthVVA3bEVfMzFpUTM5WFBieU9JQW1iMllyeG13YS1qN0tLV2RZaGJEODBQeU9UNEU1WkU5UURyblo3ektELW1JeERfWmJn?oc=5",
-      "headline": "Why Multi-Unit, Multi-Brand Operators Are Adding The Coffee Bean & Tea Leaf Franchise to Their Portfolio",
-      "summary": "Why Multi-Unit, Multi-Brand Operators Are Adding The Coffee Bean & Tea Leaf Franchise to Their Portfolio 1851 Franchise",
-      "signal": "More volume means new buys on packaging and supplies, and vendors often get set up fresh.",
-      "heat": "Warm",
+      "source": "Hoodline",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRUt1b3JaaHZxZnNrSGYyODFhU0RlSi1PTDl4cnZmb3VOblFFUVRPclUxdFZIc0Q4LTJtcTNsT0Z5WFpFVVlaeTliS2EtWmVYcXdkQVpCSWxldnNZT1RnQmFVOGhpX2NfVF9lX1ZHSGtoclNzV3pNLWtMWDdzMU1JV1JwYnA2STVEWkp2Rnk3djNwMG8yc29TUmhwdzYyRmpiMFpMdlYxTW5RTmtJM3c?oc=5",
+      "headline": "California PFAS Food Packaging Ban Explained",
+      "summary": "California PFAS Food Packaging Ban Explained Hoodline",
+      "signal": "Rules like this push buyers to re-check what they're using.",
+      "heat": "Watch",
       "lane": "A",
-      "type": "growth",
-      "company": "1851 Franchise",
+      "type": "regulation",
+      "company": "Hoodline",
       "products": [
-        "To-go packaging",
-        "Gloves",
-        "Can liners",
-        "Straws"
+        "Tray sealers"
       ],
-      "nextStep": "Find the purchasing or operations lead and ask what they're buying for the new volume.",
+      "nextStep": "Watch only. Use it as a talking point with buyers.",
       "cover": {
-        "kicker": "Growth signal",
-        "stat": "Growing",
-        "sub": "1851 Franchise"
+        "kicker": "Regulation",
+        "stat": "New rule",
+        "sub": "Hoodline"
       },
-      "opener": "Hi [Name],\nCongrats on the growth. When volume ramps up, packaging and supplies are usually where it gets tight. I'd like to quote you a backup source. Can you and I discuss?\nTony"
-    },
-    {
-      "id": "costco-trumps-aldi-in-grocery-value-perception-d-2026-09-25",
-      "found": "2026-09-28",
-      "published": "2026-09-25",
-      "source": "Grocery Dive",
-      "url": "https://www.grocerydive.com/news/aldi-costco-value-grocery-yougov/831339/",
-      "headline": "Costco trumps Aldi in grocery value perception, data shows",
-      "summary": "While the club retailer enjoys an overall advantage over the discounter, the gap varied based on people’s age, analytics firm YouGov found.",
-      "signal": "Buyers are about to feel higher costs. It's a good reason to offer a price check.",
-      "heat": "Warm",
-      "lane": "A",
-      "type": "pricing",
-      "company": "Grocery Dive",
-      "products": [
-        "To-go packaging"
-      ],
-      "nextStep": "Call buyers of these items and offer to check what they're paying.",
-      "cover": {
-        "kicker": "Price move",
-        "stat": "Price move",
-        "sub": "Grocery Dive"
-      },
-      "opener": "Hi [Name],\nPrices are moving on packaging again. Before your next order, let me check what you're paying. Can you and I discuss?\nTony"
-    },
-    {
-      "id": "village-inn-franchise-costs-fees-profit-and-data-2026-09-25",
-      "found": "2026-09-28",
-      "published": "2026-09-25",
-      "source": "1851 Franchise",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE42Tk1LZFpnX2RINUx6T1F3cm1VVGJsczR5cjRqS2NiVkcwOTBtOWJsbDdmS2RvcnMwb3VfTnhGaGdUbm12XzROQjZTaE1CTC1VRjdhMWZ6eWkzMC1VWkpVYjZBTEpTTnU0M2FfdmhrX18zTGVZQXc?oc=5",
-      "headline": "Village Inn Franchise Costs, Fees, Profit and Data for 2026",
-      "summary": "Village Inn Franchise Costs, Fees, Profit and Data for 2026 1851 Franchise",
-      "signal": "Buyers are about to feel higher costs. It's a good reason to offer a price check.",
-      "heat": "Warm",
-      "lane": "A",
-      "type": "pricing",
-      "company": "1851 Franchise",
-      "products": [
-        "To-go packaging",
-        "Gloves",
-        "Can liners"
-      ],
-      "nextStep": "Call buyers of these items and offer to check what they're paying.",
-      "cover": {
-        "kicker": "Price move",
-        "stat": "Price move",
-        "sub": "1851 Franchise"
-      },
-      "opener": "Hi [Name],\nPrices are moving on packaging again. Before your next order, let me check what you're paying. Can you and I discuss?\nTony"
-    },
-    {
-      "id": "opa-announces-15-20-price-hike-for-printing-and-2026-09-25",
-      "found": "2026-09-28",
-      "published": "2026-09-25",
-      "source": "Indian Printer & Publisher",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1NanJGdHdtYzlESTZtaHoyX2plQVpCMmVPcHFnRkJtSzcwNWhJVkRIMzF4dXRBZUtZN1VpN0ZaaE1CcFlMdzFydkZjOTNNX1RqSm5GTnZHSmNJU3FvMGZ2WDJaOTR3ZVpLUjluYjlyVkRudlNvRHRpdFVNMjdFUQ?oc=5",
-      "headline": "OPA announces 15–20% price hike for printing and packaging products",
-      "summary": "OPA announces 15–20% price hike for printing and packaging products Indian Printer & Publisher",
-      "signal": "Buyers are about to feel higher costs. It's a good reason to offer a price check.",
-      "heat": "Warm",
-      "lane": "A",
-      "type": "pricing",
-      "company": "Indian Printer & Publisher",
-      "products": [
-        "To-go packaging"
-      ],
-      "nextStep": "Call buyers of these items and offer to check what they're paying.",
-      "cover": {
-        "kicker": "Price move",
-        "stat": "20%",
-        "sub": "Indian Printer & Publisher"
-      },
-      "opener": "Hi [Name],\nPrices are moving on packaging again. Before your next order, let me check what you're paying. Can you and I discuss?\nTony"
+      "opener": ""
     },
     {
       "id": "kfc-open-house-2026-09-24",
