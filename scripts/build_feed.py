@@ -155,8 +155,11 @@ NOISE = ["recipe", "horoscope", "stock price", "shares of", "earnings call", "ob
          "feasibility", "setup cost", "cost report", "forecast", "cagr", "franchise costs", "franchise cost", "fees, profit",
          "bankrupt", "chapter 11", "layoff", "closing", "closes", "shutter", "value menu", "perception", "hidden liability",
          "why multi-unit", "why multi-brand", "top 10", "best ", "how to ", "webinar", "sponsored", "india", "indian", " uk ",
-         "australia", "canada's", "europe", "value perception"]
-BLOCKED_SOURCES = ["openpr", "quiver", "insider media", "indian printer", "1851 franchise", "ein presswire", "einpresswire",
+         "australia", "canada's", "europe", "value perception", "pakistan", "italy", "italian", "germany", "france",
+         "spain", "mexico", "brazil", "china", "chinese", "japan", "philippines", "saudi", "dubai", "uae", "nigeria",
+         "kenya", "south africa", "new zealand", "ireland", "scotland", "britain", "british", "€", "£", "₹",
+         "pet food", "petfood", "explained", "what to know", "opinion", "podcast"]
+BLOCKED_SOURCES = ["retail news asia", "hoodline", "petfoodindustry", "openpr", "quiver", "insider media", "indian printer", "1851 franchise", "ein presswire", "einpresswire",
                    "marketsandmarkets", "yahoo finance", "benzinga", "zacks", "seeking alpha", "motley fool", "marketbeat",
                    "globenewswire", "openpr.com", "news.google"]
 
@@ -228,6 +231,20 @@ OPENERS = {
 }
 
 
+STOP = {"the","a","an","to","of","in","on","for","and","with","its","at","by","from","as","is","new","after","into","over"}
+
+
+def words(t):
+    return {w for w in re.findall(r"[a-z0-9$]+", t.lower()) if w not in STOP and len(w) > 2}
+
+
+def same_story(a, b):
+    wa, wb = words(a), words(b)
+    if not wa or not wb:
+        return False
+    return len(wa & wb) / min(len(wa), len(wb)) >= 0.5
+
+
 def slug(s, n=48):
     s = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
     return s[:n].rstrip("-")
@@ -246,7 +263,13 @@ def cover_stat(title, typ):
 
 def keyword_items(cands, today):
     out = []
-    for score, c, typ, heat, lane, products in keyword_pick(cands)[:6]:
+    picked = []
+    for score, c, typ, heat, lane, products in keyword_pick(cands):
+        if len(picked) >= 6:
+            break
+        if any(same_story(c["title"], p["title"]) for p in picked):
+            continue
+        picked.append(c)
         pub = c["published_dt"].astimezone(TZ).date().isoformat()
         out.append({
             "id": f"{slug(c['title'])}-{pub}", "found": today, "published": pub,
@@ -327,6 +350,14 @@ def main():
         return any(n in t for n in NOISE) or any(b in i.get("source", "").lower() for b in BLOCKED_SOURCES)
     dropped = [i for i in items if weak(i)]
     items = [i for i in items if not weak(i)]
+    kept = []
+    for i in items:   # drop repeat coverage of a story already in the feed
+        if i.get("signal") in generic and any(same_story(i.get("headline", ""), k.get("headline", "")) for k in kept + [x for x in items if x.get("signal") not in generic]):
+            if i not in kept:
+                dropped.append(i)
+                continue
+        kept.append(i)
+    items = kept
     if dropped:
         print(f"removed {len(dropped)} weak earlier picks", file=sys.stderr)
     seen_urls = {i["url"] for i in items}
@@ -336,6 +367,8 @@ def main():
     for c in gather(since, lookback):
         t = slug(c["title"], 60)
         if c["url"] in seen_urls or t in seen_titles or t in cand_titles:
+            continue
+        if any(same_story(c["title"], i.get("headline", "")) for i in items):
             continue
         cand_titles.add(t)
         cands.append(c)
