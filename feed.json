@@ -1,10 +1,160 @@
 {
-  "updated": "2026-09-28T11:32:20-04:00",
+  "updated": "2026-09-29T09:51:08-04:00",
   "window": {
     "from": "2026-09-23",
-    "to": "2026-09-28"
+    "to": "2026-09-29"
   },
   "items": [
+    {
+      "id": "craft-kafe-s-long-delayed-commissary-kitchen-to-2026-09-28",
+      "found": "2026-09-29",
+      "published": "2026-09-28",
+      "source": "St Pete Catalyst",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNFRCMHFrNzRrX3dxaGwwREhfcGtDdnpVQWt0WkRzS2RTMlJfQTVlNURWTTduNnptVVpuMDN2MnoyMXRDQzRqdUdPTmlCb2xibDVRX3lwRVAzdUlTN0pDWVdmYmIwcjUybDV3T3YxRmRXRVNCVkhsSGY0U1BuV3BYU1NQbUhxQ0xoaVpzRg?oc=5",
+      "headline": "Craft Kafe’s long-delayed commissary kitchen to open soon",
+      "summary": "Craft Kafe’s long-delayed commissary kitchen to open soon St Pete Catalyst",
+      "signal": "More volume means new buys on packaging and supplies, and vendors often get set up fresh.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "growth",
+      "company": "St Pete Catalyst",
+      "products": [
+        "Gloves"
+      ],
+      "nextStep": "Find the purchasing or operations lead and ask what they're buying for the new volume.",
+      "cover": {
+        "kicker": "Growth signal",
+        "stat": "Growing",
+        "sub": "St Pete Catalyst"
+      },
+      "opener": "Hi [Name],\nCongrats on the growth. When volume ramps up, packaging and supplies are usually where it gets tight. I'd like to quote you a backup source. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "tgi-fridays-to-open-first-new-u-s-restaurants-in-2026-09-29",
+      "found": "2026-09-29",
+      "published": "2026-09-29",
+      "source": "Chain Store Age",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbGRUVGNQVDB1SUFHb1hxTDRySXVwblJrMXJVV1l4eHUzSV9jOTQ0LXhJcC12TTZKUDg0cnAtU1o5MGxBVUlvanVQTEZjMElxLTlRRmJXaWpua2FianFEV2c0TEQ2bUdBVXNvR0Rybm5qRzRjR25yRmNJSUFCOU9GZFJXVVFtbnAteGsyZmFnRmdJSEstcmc?oc=5",
+      "headline": "TGI Fridays to open first new U.S. restaurants in more than a decade — here's where",
+      "summary": "TGI Fridays to open first new U.S. restaurants in more than a decade — here's where Chain Store Age",
+      "signal": "More volume means new buys on packaging and supplies, and vendors often get set up fresh.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "growth",
+      "company": "Chain Store Age",
+      "products": [
+        "To-go packaging",
+        "Gloves",
+        "Can liners"
+      ],
+      "nextStep": "Find the purchasing or operations lead and ask what they're buying for the new volume.",
+      "cover": {
+        "kicker": "Growth signal",
+        "stat": "Growing",
+        "sub": "Chain Store Age"
+      },
+      "opener": "Hi [Name],\nCongrats on the growth. When volume ramps up, packaging and supplies are usually where it gets tight. I'd like to quote you a backup source. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "munchies-and-el-rey-owner-opens-new-restaurant-t-2026-09-28",
+      "found": "2026-09-29",
+      "published": "2026-09-28",
+      "source": "The Augusta Chronicle",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbEs4YTJab1A1bHhqaWJBYmJrZWJ4VDJsYjZMcXBacWhZdGdNcE5TUjdldmtzOG5mQjlYV29YMG50SW9la0g1QndBX2ltTTAtTzRTT1hSZC0yZTQtbDlKVjNqSU9QY09iMkI5TnFLTF9kSUpUcUpJVUM1WFlnTnBVamdWS1NPNTNHZHFyUWVxRXdKb2lkZ3pkdlZyUjdlUmZUOXRYVV9FdXhSZGhPaWh2X19ZVGZHYm1uVmxv?oc=5",
+      "headline": "Munchies and El Rey owner opens new restaurant, The Food Lab",
+      "summary": "Munchies and El Rey owner opens new restaurant, The Food Lab The Augusta Chronicle",
+      "signal": "More volume means new buys on packaging and supplies, and vendors often get set up fresh.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "growth",
+      "company": "The Augusta Chronicle",
+      "products": [
+        "To-go packaging",
+        "Gloves",
+        "Can liners"
+      ],
+      "nextStep": "Find the purchasing or operations lead and ask what they're buying for the new volume.",
+      "cover": {
+        "kicker": "Growth signal",
+        "stat": "Growing",
+        "sub": "The Augusta Chronicle"
+      },
+      "opener": "Hi [Name],\nCongrats on the growth. When volume ramps up, packaging and supplies are usually where it gets tight. I'd like to quote you a backup source. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "a-conversation-with-chad-hatfield-pharm-d-m-h-a-2026-09-28",
+      "found": "2026-09-29",
+      "published": "2026-09-28",
+      "source": "managedhealthcareexecutive.com",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPa1Vxb09PZ1lVQ1ZRUnlaN091T0E5Z3BoX2xEQjFxaUhidjdsR29WZ0RPS3BoUGFqZzZfaUtQRGEzV2FMZzVCeDdraWRURmJjWWp2LURObkZvaHNqVzFjbEFKcUx5TUpHLXBQcmViTk1kVXVTZTBnZVhPYUdwMG9ERGJXXzdpYk5TTzdISFhwTnduVXRMZlhCM2ZNTUs4ZGRhRkhLbFh0dlBkX2hnM3I1SHQ0RHpYTVZjU1JhYWF4NlhsNkYxM2RqZVNUSmlnVHhYTnZTODNmQ0JycmNuc1lNa2Vsa1dMTGRyZzV6OEoyR2xNN2tvV1VNM0ZYS3RUVGJpVU1XdQ?oc=5",
+      "headline": "A conversation with Chad Hatfield, Pharm.D., M.H.A., BCPS, about pharmacy expansion, clinical specialization and regulatory readiness",
+      "summary": "A conversation with Chad Hatfield, Pharm.D., M.H.A., BCPS, about pharmacy expansion, clinical specialization and regulatory readiness managedhealthcareexecutive.com",
+      "signal": "More temperature-sensitive shipping means more liners, gel packs and shipper boxes.",
+      "heat": "Warm",
+      "lane": "B",
+      "type": "coldchain",
+      "company": "managedhealthcareexecutive.com",
+      "products": [
+        "Cold chain shippers"
+      ],
+      "nextStep": "Find the shipping or packaging lead and offer liners, gel packs and shippers.",
+      "cover": {
+        "kicker": "Cold chain",
+        "stat": "Cold chain",
+        "sub": "managedhealthcareexecutive.c"
+      },
+      "opener": "Hi [Name],\nI saw you're growing your cold shipping. I supply liners, gel packs and shipper boxes and can get you a side-by-side quick. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "gold-s-gym-builds-on-southern-california-legacy-2026-09-28",
+      "found": "2026-09-29",
+      "published": "2026-09-28",
+      "source": "Eagle-Tribune",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPRE1TRENibFp6QURJZjNnaHEyekR5dWNMQjJ5ZHZ0LV9jQWphb2FoWjBTTUVhcGJYVVlST2RqN3hvbTZXTldUWmRWdElrSmtya2dQUDYwSjI3X1ROOWlRc3VzOXRhTVVrUmF1eVV6NWVsUVBueGpBakcyVW5NMlFxTHJid2VPOTNJUzVtbWJhOGRyMXBqQkl3dWF4eC1PWURMQ2ZiMXYzbVVFamh2N3N2TlNHdWVReHZTLWdoa0VoYnZpNF9TNW40U1JJN1JsNzYtX3BYT2gxdTViaFBkVU9qWFRlMUh6NHk3VUtMMS0xdi1mQXdsSURHVDJDcEw5NDgxMnp2bnBLY3owUQ?oc=5",
+      "headline": "Gold’s Gym® Builds on Southern California Legacy With 15-Unit Franchise Development Agreement",
+      "summary": "Gold’s Gym® Builds on Southern California Legacy With 15-Unit Franchise Development Agreement Eagle-Tribune",
+      "signal": "More volume means new buys on packaging and supplies, and vendors often get set up fresh.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "growth",
+      "company": "Eagle-Tribune",
+      "products": [
+        "To-go packaging",
+        "Gloves",
+        "Can liners"
+      ],
+      "nextStep": "Find the purchasing or operations lead and ask what they're buying for the new volume.",
+      "cover": {
+        "kicker": "Growth signal",
+        "stat": "15-Unit",
+        "sub": "Eagle-Tribune"
+      },
+      "opener": "Hi [Name],\nCongrats on the growth. When volume ramps up, packaging and supplies are usually where it gets tight. I'd like to quote you a backup source. Can you and I discuss?\nTony"
+    },
+    {
+      "id": "opa-announces-15-20-price-hike-for-printing-and-2026-09-27",
+      "found": "2026-09-29",
+      "published": "2026-09-27",
+      "source": "Packaging South Asia",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQLWtoR216Y184Y050YWR2MzE0X3h5dFZDNGl6VWFfUHZNWU5fMURWNWJHbDFDR0Y3LUFWMEZjRW5XaGlvVnNQY21jbUFMSFNaWTRhTlE4M29PS05iSXRoN2JoSGY2YUJaRkNVOUtFc3FhMk5pUjFSRmI5SUxvbEZCWk1SVTBrREcwN2J3c0M3QQ?oc=5",
+      "headline": "OPA announces 15–20% price hike for printing and packaging products",
+      "summary": "OPA announces 15–20% price hike for printing and packaging products Packaging South Asia",
+      "signal": "Buyers are about to feel higher costs. It's a good reason to offer a price check.",
+      "heat": "Warm",
+      "lane": "A",
+      "type": "pricing",
+      "company": "Packaging South Asia",
+      "products": [
+        "To-go packaging"
+      ],
+      "nextStep": "Call buyers of these items and offer to check what they're paying.",
+      "cover": {
+        "kicker": "Price move",
+        "stat": "20%",
+        "sub": "Packaging South Asia"
+      },
+      "opener": "Hi [Name],\nPrices are moving on packaging again. Before your next order, let me check what you're paying. Can you and I discuss?\nTony"
+    },
     {
       "id": "3-big-numbers-how-mcdonald-s-is-investing-in-its-2026-09-28",
       "found": "2026-09-28",
