@@ -2,11 +2,17 @@ name: ChainzNewz daily refresh
 
 on:
   schedule:
-    - cron: "10 9 * * 1-5"   # weekdays about 5am Eastern (4am in winter)
-  workflow_dispatch:          # adds a "Run workflow" button for testing
+    - cron: "17 9 * * 1-5"    # about 5:17am Eastern
+    - cron: "43 10 * * 1-5"   # backup, about 6:43am Eastern
+    - cron: "23 12 * * 1-5"   # backup, about 8:23am Eastern
+  workflow_dispatch:           # "Run workflow" button
 
 permissions:
   contents: write
+
+concurrency:
+  group: chainznewz-refresh
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -30,4 +36,5 @@ jobs:
           git add feed.json
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Daily news refresh $(date -u +%Y-%m-%d)"
+          git pull --rebase origin main
           git push
