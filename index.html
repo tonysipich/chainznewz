@@ -358,7 +358,45 @@ async function copyText(text, input){
   try{ await navigator.clipboard.writeText(text); toast('Copied'); return true; }
   catch(e){ if (input){ input.focus(); input.select(); toast('Press Ctrl+C / ⌘C to copy'); } return false; }
 }
-function toggleSet(set, key, id){ set.has(id) ? set.delete(id) : set.add(id); save(key, [...set]); }
+/* Starred / Contacted / Not relevant are shared across every device through /api/marks.
+   The browser keeps a copy so the page still works offline. */
+const MARK_SETS = {starred:'lf.starred', contacted:'lf.contacted', hidden:'lf.hidden'};
+let marksBusy = 0;
+function applyMarks(m){
+  if (!m || marksBusy) return false;
+  let changed = false;
+  for (const [name, key] of Object.entries(MARK_SETS)){
+    const next = new Set(Array.isArray(m[name]) ? m[name] : []);
+    const cur = state[name];
+    if (next.size !== cur.size || [...next].some(x => !cur.has(x))){ state[name] = next; save(key, [...next]); changed = true; }
+  }
+  return changed;
+}
+async function syncMarks(){
+  try{
+    const r = await fetch('/api/marks?t=' + Date.now(), {cache:'no-store'});
+    if (!r.ok) return;
+    const m = await r.json();
+    if (!load('lf.marksMerged', false)){
+      const local = {starred:[...state.starred], contacted:[...state.contacted], hidden:[...state.hidden]};
+      if (local.starred.length || local.contacted.length || local.hidden.length){
+        const r2 = await fetch('/api/marks', {method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({merge: local})});
+        if (r2.ok){ save('lf.marksMerged', true); if (applyMarks(await r2.json())) render(); return; }
+      } else save('lf.marksMerged', true);
+    }
+    if (applyMarks(m)) render();
+  }catch(e){}
+}
+function toggleSet(set, key, id){
+  set.has(id) ? set.delete(id) : set.add(id); save(key, [...set]);
+  const name = Object.keys(MARK_SETS).find(n => MARK_SETS[n] === key);
+  const on = set.has(id);
+  marksBusy++;
+  fetch('/api/marks', {method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({set:name, id, on})})
+    .then(r => { if (!r.ok) throw new Error(r.status); })
+    .catch(() => toast("Couldn't save to other devices. Try again."))
+    .finally(() => { marksBusy--; });
+}
 
 document.addEventListener('click', async e=>{
   const tab = e.target.closest('[data-tab]');
@@ -413,12 +451,13 @@ async function refreshFeed(show){
 }
 async function boot(){
   renderTabs(); renderFilters();
-  await refreshFeed(false);
+  await Promise.all([refreshFeed(false), syncMarks()]);
 }
 /* check for new posts whenever the app comes back to the screen */
-document.addEventListener('visibilitychange', ()=>{ if (document.visibilityState === 'visible' && Date.now() - lastCheck > 60000) refreshFeed(false); });
-window.addEventListener('pageshow', e=>{ if (e.persisted) refreshFeed(false); });
-window.addEventListener('focus', ()=>{ if (Date.now() - lastCheck > 60000) refreshFeed(false); });
+document.addEventListener('visibilitychange', ()=>{ if (document.visibilityState === 'visible'){ syncMarks(); if (Date.now() - lastCheck > 60000) refreshFeed(false); } });
+window.addEventListener('pageshow', e=>{ if (e.persisted){ syncMarks(); refreshFeed(false); } });
+window.addEventListener('focus', ()=>{ syncMarks(); if (Date.now() - lastCheck > 60000) refreshFeed(false); });
+setInterval(()=>{ if (document.visibilityState === 'visible') syncMarks(); }, 30000);
 /* pull down at the top of the feed to refresh */
 (function(){
   const el = document.getElementById('ptr'), txt = document.getElementById('ptr-text');
@@ -441,7 +480,7 @@ window.addEventListener('focus', ()=>{ if (Date.now() - lastCheck > 60000) refre
     const go = dist * 0.6 >= LIMIT; startY = null;
     if (!go){ hide(); return; }
     el.classList.remove('ready'); el.classList.add('spin'); txt.textContent = 'Refreshing…';
-    await refreshFeed(true);
+    await Promise.all([refreshFeed(true), syncMarks()]);
     hide();
   }, {passive:true});
 })();
